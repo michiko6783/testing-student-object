@@ -6,7 +6,7 @@ var student;
 
 describe('Student Test Suite', function(){
  before(function(){
-   student = new Student('Melissa', 'Pringle');
+   student = new Student('melissa', 'pringle');
  })
 
  describe('test student', function(){
@@ -15,22 +15,22 @@ describe('Student Test Suite', function(){
      var firstName = student.getFirstName();
      console.log(student);
 
-     expect(firstName).to.equal('Melissa');
+     expect(firstName).to.equal('melissa');
    });
 
    it('should return the last name', function(){
      var lastName = student.getLastName();
-     expect(lastName).to.equal('Pringle');
+     expect(lastName).to.equal('pringle');
    });
 
    it('should return the full name', function(){
      var fullName = student.getFullName();
-     expect(fullName).to.equal('Melissa Pringle');
+     expect(fullName).to.equal('melissa pringle');
    });
 
    it('should return the greeting', function(){
      var greeting = student.getGreeting();
-     expect(greeting).to.equal('Hi I'm Melissa);
+     expect(greeting).to.equal('Good day mate, my name is melissa');
    });
 
  });
